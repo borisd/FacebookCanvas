@@ -1,7 +1,9 @@
 Fbstream::Application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "authentication" }
 
   root :to => 'home#index'
+
+  match 'canvas' => 'authentication#canvas'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
