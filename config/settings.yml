@@ -1,0 +1,9 @@
+production: 
+  facebook_app_id : ''
+  facebook_secret : ''
+
+development: 
+  facebook_app_id : ''
+  facebook_secret : ''
+
+test: 
