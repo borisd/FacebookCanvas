@@ -63,3 +63,5 @@ module Fbstream
     config.assets.version = '1.0'
   end
 end
+
+CONFIG = YAML::load(File.open(File.join(::Rails.root, 'config/settings.yml')))[::Rails.env]
